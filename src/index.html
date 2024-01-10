@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="uk">
   @@include('components/head.html', { 'title': 'Головна' })
-  <body>
+  <body class="">
     <div class="relative flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
       <main class="grow">
-        <div class="xl:container relative sm:flex">
+        <!-- Топ новини -->
+        <div class="relative xl:container sm:flex">
           <div class="absolute left-full top-0 z-20 h-full w-full bg-secondary"></div>
           <div class="absolute right-full top-0 z-20 h-full w-full bg-secondary"></div>
-          <p class="sm:absolute w-full sm:left-0 sm:top-0 z-10 flex justify-center text-center h-full sm:w-32 items-center whitespace-nowrap bg-primary-danger px-4 py-1 sm:py-3 text-sm font-bold lg:text-base">ТОП-новини</p>
+          <p
+            class="z-10 flex h-full w-full items-center justify-center whitespace-nowrap bg-primary-danger px-4 py-1 text-center text-sm font-bold sm:absolute sm:left-0 sm:top-0 sm:w-32 sm:py-3 lg:text-base">
+            ТОП-новини
+          </p>
           <div class="slider-marquee w-auto bg-secondary-dark">
             <div
-              class="slider-marquee-wrapper flex h-full w-full items-center space-x-5 divide-x-2 divide-primary bg-secondary-dark px-6 py-2 sm:py-3 ease-linear [&>*:not(:first-child)]:pl-5">
+              class="slider-marquee-wrapper flex h-full w-full items-center space-x-5 divide-x-2 divide-primary bg-secondary-dark px-6 py-2 ease-linear sm:py-3 [&>*:not(:first-child)]:pl-5">
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
                   <h2>Барселона лідер таблиці чемпіонату</h2>
@@ -55,7 +59,170 @@
             </div>
           </div>
         </div>
-        <section class=""></section>
+
+        <!-- Анонси -->
+        <section class="mt-8 md:mt-11">
+          <div class="container">
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-5">
+              <h2 class="bottom-line inline-block text-xl font-bold">Анонси</h2>
+              <a href="#" class="group flex items-center gap-2 pb-2 text-xl hover:text-primary">
+                Більше
+                <svg class="mt-1 h-3 w-3.5 rotate-90 text-white group-hover:text-primary">
+                  <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div
+              class="grid w-full grid-cols-1 gap-4 sm:grid-cols-[1fr_1fr] sm:grid-rows-3 lg:grid-cols-[45%_1fr_1fr] lg:grid-rows-2 sm:max-lg:[&>*:nth-child(1)]:col-span-2 lg:[&>*:nth-child(1)]:row-span-2 [&>*:nth-child(1)_h2]:text-base sm:[&>*:nth-child(1)_h2]:text-3xl">
+              <article class="group/article relative overflow-hidden rounded-lg px-4 pb-3 pt-32">
+                <span class="transition-color absolute left-0 top-0 z-10 h-full w-full bg-black/50"></span>
+                <img
+                  src="./img/image1.webp"
+                  alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                  class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
+                <div class="relative z-20 flex h-full flex-col">
+                  <a href="single.html" class="group flex h-full w-full">
+                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                  </a>
+                  <div>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <p class="text-sm">20 березня 2023, 14:34</p>
+                  </div>
+                </div>
+              </article>
+              <article class="group/article relative overflow-hidden rounded-lg px-4 pb-3 pt-32">
+                <span class="transition-color absolute left-0 top-0 z-10 h-full w-full bg-black/50"></span>
+                <img
+                  src="./img/image1.webp"
+                  alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                  class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
+                <div class="relative z-20 flex h-full flex-col">
+                  <a href="single.html" class="group flex h-full w-full">
+                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                  </a>
+                  <div>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <p class="text-sm">20 березня 2023, 14:34</p>
+                  </div>
+                </div>
+              </article>
+              <article class="group/article relative overflow-hidden rounded-lg px-4 pb-3 pt-32">
+                <span class="transition-color absolute left-0 top-0 z-10 h-full w-full bg-black/50"></span>
+                <img
+                  src="./img/image3.webp"
+                  alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                  class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
+                <div class="relative z-20 flex h-full flex-col">
+                  <a href="single.html" class="group flex h-full w-full">
+                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                  </a>
+                  <div>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <p class="text-sm">20 березня 2023, 14:34</p>
+                  </div>
+                </div>
+              </article>
+              <article class="group/article relative overflow-hidden rounded-lg px-4 pb-3 pt-32">
+                <span class="transition-color absolute left-0 top-0 z-10 h-full w-full bg-black/50"></span>
+                <img
+                  src="./img/image2.webp"
+                  alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                  class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
+                <div class="relative z-20 flex h-full flex-col">
+                  <a href="single.html" class="group flex h-full w-full">
+                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                  </a>
+                  <div>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <p class="text-sm">20 березня 2023, 14:34</p>
+                  </div>
+                </div>
+              </article>
+              <article class="group/article relative overflow-hidden rounded-lg px-4 pb-3 pt-32">
+                <span class="transition-color absolute left-0 top-0 z-10 h-full w-full bg-black/50"></span>
+                <img
+                  src="./img/image1.webp"
+                  alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                  class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
+                <div class="relative z-20 flex h-full flex-col">
+                  <a href="single.html" class="group flex h-full w-full">
+                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                  </a>
+                  <div>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <p class="text-sm">20 березня 2023, 14:34</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Огляд подій -->
+        <section class="mt-12 md:mt-20">
+          <div class="container">
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-5">
+              <h2 class="bottom-line inline-block text-xl font-bold">Огляд подій</h2>
+              <a href="#" class="group flex items-center gap-2 xl:pb-2 text-xl hover:text-primary">
+                Більше
+                <svg class="mt-1 h-3 w-3.5 rotate-90 text-white group-hover:text-primary">
+                  <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-4 gap-y-10">
+              <article>
+                  <div class="overflow-hidden rounded-lg">
+                    <a href="single.html" class="group mb-3 block h-full w-full overflow-hidden">
+                      <img src="./img/image4.webp" alt="Еріксен продовжує відновлюватися після операції на щиколотці" class="overflow-hidden rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-105 h-[240px] sm:h-full">
+                    </a>
+                  </div>
+                <div>
+                  <a href="single.html" class="group flex h-full w-full">
+                    <h2 class="mb-2 mt-auto font-normal lg:font-bold leading-tight underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                  </a>
+                  <div>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <p class="text-sm">20 березня 2023, 14:34</p>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="overflow-hidden rounded-lg">
+                  <a href="single.html" class="group mb-3 block h-full w-full overflow-hidden">
+                    <img src="./img/image4.webp" alt="Еріксен продовжує відновлюватися після операції на щиколотці" class="overflow-hidden rounded-lg  w-full object-cover transition-transform duration-500 group-hover:scale-105 h-[240px] sm:h-full">
+                  </a>
+                </div>
+              <div>
+                <a href="single.html" class="group flex h-full w-full">
+                  <h2 class="mb-2 mt-auto font-normal lg:font-bold leading-tight underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                </a>
+                <div>
+                  <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                  <p class="text-sm">20 березня 2023, 14:34</p>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="overflow-hidden rounded-lg">
+                <a href="single.html" class="group mb-3 block h-full w-full overflow-hidden">
+                  <img src="./img/image4.webp" alt="Еріксен продовжує відновлюватися після операції на щиколотці" class="overflow-hidden rounded-lg  w-full object-cover transition-transform duration-500 group-hover:scale-105 h-[240px] sm:h-full">
+                </a>
+              </div>
+            <div>
+              <a href="single.html" class="group flex h-full w-full">
+                <h2 class="mb-2 mt-auto text-base xl:text-xl font-normal lg:font-bold leading-tight underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+              </a>
+              <div>
+                <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                <p class="text-sm">20 березня 2023, 14:34</p>
+              </div>
+            </div>
+          </article>
+   
+            </div>
+          </div>
+        </section>
       </main>
       @@include('components/footer.html', { }) @@include('components/modal.html', { })
     </div>

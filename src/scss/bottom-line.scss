@@ -1,0 +1,7 @@
+.bottom-line {
+  position: relative;
+  &::after {
+    content: '';
+    @apply w-full h-[0.185rem] absolute left-0 -bottom-[0.3rem] bg-primary;
+  }
+}
