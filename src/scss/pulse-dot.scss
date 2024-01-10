@@ -1,0 +1,7 @@
+.pulse-dot {
+  @apply relative;
+  &::after {
+    content: '';
+    @apply absolute right-1 top-1 w-2 h-2 rounded-full bg-green-400 animate-pulse;
+  }
+}

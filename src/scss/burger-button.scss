@@ -1,0 +1,10 @@
+#burger-inner {
+  &.active-burger {
+    @apply [&>*:nth-child(-n+3)]:translate-x-10;
+  }
+}
+#burger-cross {
+  &.active-burger {
+    @apply w-12 translate-x-0  [&>*:nth-child(1)]:rotate-45 [&>*:nth-child(2)]:-rotate-45;
+  }
+}
