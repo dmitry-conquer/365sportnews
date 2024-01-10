@@ -1,14 +1,14 @@
 // eslint-disable-next-line import/extensions
 import { useDynamicAdapt } from './modules/dynamicAdapt.js';
-// import "./modules/sliders.js";
-// import "./modules/imask.js";
-// import "./modules/tabs.js";
 
 // eslint-disable-next-line import/extensions
 import './modules/header.js';
 
 // eslint-disable-next-line import/extensions
 import './modules/search-form.js';
+
+// eslint-disable-next-line import/extensions
+import "./modules/sliders.js";
 // // import "./modules/load-more.js";
 // import "./modules/scroll.js";
 // import "./modules/spoiler.js";

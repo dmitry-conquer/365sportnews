@@ -2,11 +2,60 @@
 <html lang="uk">
   @@include('components/head.html', { 'title': 'Головна' })
   <body>
-    <div class="flex flex-col overflow-hidden relative min-h-screen">
+    <div class="relative flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
       <main class="grow">
-        <section class="">
-        </section>
+        <div class="xl:container relative sm:flex">
+          <div class="absolute left-full top-0 z-20 h-full w-full bg-secondary"></div>
+          <div class="absolute right-full top-0 z-20 h-full w-full bg-secondary"></div>
+          <p class="sm:absolute w-full sm:left-0 sm:top-0 z-10 flex justify-center text-center h-full sm:w-32 items-center whitespace-nowrap bg-primary-danger px-4 py-1 sm:py-3 text-sm font-bold lg:text-base">ТОП-новини</p>
+          <div class="slider-marquee w-auto bg-secondary-dark">
+            <div
+              class="slider-marquee-wrapper flex h-full w-full items-center space-x-5 divide-x-2 divide-primary bg-secondary-dark px-6 py-2 sm:py-3 ease-linear [&>*:not(:first-child)]:pl-5">
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>Барселона лідер таблиці чемпіонату</h2>
+                </a>
+              </article>
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                </a>
+              </article>
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                </a>
+              </article>
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>Ліга Чемпіонів 2022/23</h2>
+                </a>
+              </article>
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                </a>
+              </article>
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>Ліга Чемпіонів 2022/23</h2>
+                </a>
+              </article>
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                </a>
+              </article>
+              <article class="slider-marquee-slide shrink-0">
+                <a href="single.html" class="text-center text-sm font-bold lg:text-base">
+                  <h2>Ліга Чемпіонів 2022/23</h2>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+        <section class=""></section>
       </main>
       @@include('components/footer.html', { }) @@include('components/modal.html', { })
     </div>

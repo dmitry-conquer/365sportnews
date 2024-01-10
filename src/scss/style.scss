@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import '../../node_modules/swiper/swiper.scss';
 @import "anim-underline";
 @import "header-nav";
 @import "burger-button";
@@ -8,6 +10,6 @@
 
 @layer base {
   body {
-    @apply bg-secondary;
+    @apply bg-secondary text-white text-base font-normal;
   }
 }

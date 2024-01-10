@@ -1,62 +1,25 @@
-import Swiper, { Navigation, Pagination, Autoplay, Parallax, Scrollbar } from 'swiper';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Swiper, { Autoplay } from 'swiper';
 
-// Slider init function
-export function initSliders() {
-   //  Sliders list
-   if (document.querySelector('.slider')) {
-      let defaultSlider;
-      defaultSlider = new Swiper('.slider', {
-         // Сonnect modules (P.S dont forget !import)
-         modules: [Navigation, Pagination, Autoplay, Parallax],
+if (document.querySelector('.slider-marquee')) {
+  const marqueeSlider = new Swiper('.slider-marquee', {
+    modules: [Autoplay],
+    wrapperClass: 'slider-marquee-wrapper',
+    slideClass: 'slider-marquee-slide',
+    centeredSlides: true,
+    speed: 4000,
+    autoplay: {
+      delay: 5,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
+    },
+    slidesPerView: "auto",
+    loop: true,
+    watchSlidesProgress: true,
+    grabCursor: true
 
-         // Custom classes
-         wrapperClass: 'slider__wrapper',
-         slideClass: 'slider__slide',
-
-         // Common settings
-         slidesPerView: 1,
-         spaceBetween: 30,
-         speed: 800,
-         observer: true,
-         observeParents: true,
-         loop: true,
-         loopedSlides: 2,
-         // centeredSlides: true,
-         // parallax: true,
-         // watchOverflow: false,
-         //autoHeight: true,
-         // watchSlidesProgress: true,
-
-         // Effects
-         //effect: 'fade',
-         //autoplay: {
-         //  delay: 1000,
-         //  disableOnInteraction: false,
-         //  pauseOnMouseEnter: true,
-         //},
-
-         // Pagination
-         // pagination: {
-         //    el: '.slider-default__pagination',
-         //    clickable: true,
-         // },
-
-         // Scrollbar
-         // //scrollbar: {
-         // //  el: '.swiper-scrollbar',
-         // //  draggable: true,
-         // //},
-
-         // Navigation
-         // navigation: {
-         //    prevEl: '.slider-default__button_prev',
-         //    nextEl: '.slider-default__button_next',
-         // },
-
-
-
-         // Breakpoints
-         /*
+    // Breakpoints
+    /*
          breakpoints: {
             320: {
                slidesPerView: 1,
@@ -77,9 +40,8 @@ export function initSliders() {
          },
          */
 
-
-         // Events
-            /*
+    // Events
+    /*
          on: {
             // - - - - - - - [custom fraction] - - - - - - - - - - - - - - - - - - - - - - - - - - - -
             init: function (swiper) {
@@ -112,14 +74,14 @@ export function initSliders() {
             },
          },
             */
-      });
+  });
+  console.log(marqueeSlider);
 
-      // stop slider on mouseenter
-      // defaultSlider.el.addEventListener('mouseenter', () => {
-      //    defaultSlider.autoplay.stop();
-      // });
-      // defaultSlider.el.addEventListener('mouseleave', () => {
-      //    defaultSlider.autoplay.start();
-      // });
-   }
+  // stop slider on mouseenter
+  // defaultSlider.el.addEventListener('mouseenter', () => {
+  //    defaultSlider.autoplay.stop();
+  // });
+  // defaultSlider.el.addEventListener('mouseleave', () => {
+  //    defaultSlider.autoplay.start();
+  // });
 }
