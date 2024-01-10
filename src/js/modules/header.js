@@ -19,19 +19,28 @@ if (burgerButton) {
   });
 }
 
-const itemsHasChildren = document.querySelectorAll('.menu-item-has-children > a');
+
+
+/**
+ * 
+ *  Multi-level menu
+ * 
+ */
+const itemsHasChildren = document.querySelectorAll('.menu-item-has-children');
 
 function toggleSubmenu() {
-  this.classList.toggle('is-active');
-  if (window.innerWidth <= 1023.98) {
-    const spoilerContent = this.nextElementSibling;
-    spoilerContent.style.maxHeight = this.classList.contains('is-active') ? `${spoilerContent.scrollHeight}px` : 0;
+  const subMenu = this.nextElementSibling;
+  const parent = this.parentNode;
+  parent.classList.toggle('is-active');
+  subMenu.classList.toggle('is-active');
+  if (window.innerWidth < 1024) {
+    subMenu.style.maxHeight = parent.classList.contains('is-active') ? `${subMenu.scrollHeight}px` : 0;
   }
 }
 
 itemsHasChildren.forEach(link => {
   if (link && isMobile.any()) {
-    link.addEventListener('click', toggleSubmenu);
+    link.querySelector("button").addEventListener('click', toggleSubmenu);
   }
 });
 
