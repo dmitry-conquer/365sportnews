@@ -5,7 +5,7 @@
     <div class="relative flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
       <main class="grow">
-        <div class="page-inner py-10 sm:py-16">
+        <div class="page-inner pt-10 sm:pt-16">
           <div class="breadcrumbs container mb-10 flex items-center gap-2">
             <a href="/" class="text-sm font-bold uppercase transition-colors hover:text-primary">Головна</a>
             <span>/</span>
@@ -15,10 +15,11 @@
             <div class="container">
               <h1 class="mb-12 text-center text-3xl font-bold uppercase sm:text-4xl lg:mb-14 lg:text-5xl">Новини</h1>
               <div id="posts-container" class="mb-10 space-y-12 sm:mb-16 sm:space-y-14">
-                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[3.25rem]">
+                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[2.25rem]">
                   <div class="h-[240px] w-full sm:h-full sm:w-[60%] lg:w-[40%]">
                     <a href="single.html" class="group/image block h-full w-full overflow-hidden rounded-lg">
                       <img
+                        loading="lazy"
                         src="./img/image4.webp"
                         alt="Кілліан Мбаппе - найкращий гравець матчу проти Марселя"
                         class="block h-full w-full rounded-lg object-cover transition-transform duration-500 group-hover/image:scale-105" />
@@ -40,10 +41,11 @@
                     </div>
                   </div>
                 </article>
-                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[3.25rem]">
+                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[2.25rem]">
                   <div class="h-[240px] w-full sm:h-full sm:w-[60%] lg:w-[40%]">
                     <a href="single.html" class="group/image block h-full w-full overflow-hidden rounded-lg">
                       <img
+                        loading="lazy"
                         src="./img/image3.webp"
                         alt="Кілліан Мбаппе - найкращий гравець матчу проти Марселя"
                         class="block h-full w-full rounded-lg object-cover transition-transform duration-500 group-hover/image:scale-105" />
@@ -65,10 +67,11 @@
                     </div>
                   </div>
                 </article>
-                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[3.25rem]">
+                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[2.25rem]">
                   <div class="h-[240px] w-full sm:h-full sm:w-[60%] lg:w-[40%]">
                     <a href="single.html" class="group/image block h-full w-full overflow-hidden rounded-lg">
                       <img
+                        loading="lazy"
                         src="./img/image2.webp"
                         alt="Кілліан Мбаппе - найкращий гравець матчу проти Марселя"
                         class="block h-full w-full rounded-lg object-cover transition-transform duration-500 group-hover/image:scale-105" />
@@ -90,10 +93,11 @@
                     </div>
                   </div>
                 </article>
-                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[3.25rem]">
+                <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[2.25rem]">
                   <div class="h-[240px] w-full sm:h-full sm:w-[60%] lg:w-[40%]">
                     <a href="single.html" class="group/image block h-full w-full overflow-hidden rounded-lg">
                       <img
+                        loading="lazy"
                         src="./img/image1.webp"
                         alt="Кілліан Мбаппе - найкращий гравець матчу проти Марселя"
                         class="block h-full w-full rounded-lg object-cover transition-transform duration-500 group-hover/image:scale-105" />
@@ -122,7 +126,7 @@
                   data-category=""
                   data-container-id="posts-container"
                   type="button"
-                  class="w-[14rem] rounded-[3.125rem] border-2 border-white py-4 text-center font-bold uppercase transition-colors hover:border-transparent hover:bg-primary/90">
+                  class="w-[14rem] rounded-[3.125rem] border-2 border-white py-3 sm:py-4 text-sm sm:text-base text-center font-bold uppercase transition-colors hover:border-transparent hover:bg-primary/90">
                   Показати більше
                 </button>
               </div>

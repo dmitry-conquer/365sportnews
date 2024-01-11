@@ -13,8 +13,6 @@ if (sliderMarquee) {
     speed,
     autoplay: {
       delay: 5,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
     },
     slidesPerView: 'auto',
     loop: true,

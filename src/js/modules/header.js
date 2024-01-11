@@ -19,40 +19,35 @@ if (burgerButton) {
   });
 }
 
-
-
 /**
- * 
+ *
  *  Multi-level menu
- * 
+ *
  */
 const itemsHasChildren = document.querySelectorAll('.menu-item-has-children');
 
 function toggleSubmenu() {
-  const subMenu = this.nextElementSibling;
-  const parent = this.parentNode;
-  parent.classList.toggle('is-active');
-  subMenu.classList.toggle('is-active');
+  const subMenu = this.querySelector('.sub-menu');
+  this.classList.toggle('is-active');
   if (window.innerWidth < 1024) {
-    subMenu.style.maxHeight = parent.classList.contains('is-active') ? `${subMenu.scrollHeight}px` : 0;
+    subMenu.style.maxHeight = this.classList.contains('is-active') ? `${subMenu.scrollHeight}px` : 0;
   }
 }
 
 itemsHasChildren.forEach(link => {
   if (link && isMobile.any()) {
-    link.querySelector("button").addEventListener('click', toggleSubmenu);
+    link.addEventListener('click', toggleSubmenu);
   }
 });
-
 
 /**
  * Click outside
  */
 function clickOutside(e) {
-  if (!e.target.closest(".menu-item-has-children") && !e.target.closest(".sub-menu") && document.querySelector(".is-active")) {
-    itemsHasChildren.forEach(el => el.classList.remove("is-active"));
+  if (!e.target.closest('.menu-item-has-children') && !e.target.closest('.sub-menu') && document.querySelector('.is-active')) {
+    itemsHasChildren.forEach(el => el.classList.remove('is-active'));
   }
 }
-document.addEventListener("click", e => {
+document.addEventListener('click', e => {
   clickOutside(e);
 });

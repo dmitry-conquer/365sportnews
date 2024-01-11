@@ -13,6 +13,9 @@
       @apply visible opacity-100;
     }
   }
+  & > a {
+    @apply pointer-events-none;
+  }
 }
 
 

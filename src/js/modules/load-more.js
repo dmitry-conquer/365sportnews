@@ -40,7 +40,7 @@ function renderTemplate(postData, container) {
     .map(
       post =>
         `
-        <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[3.25rem]">
+        <article class="flex flex-col gap-4 max-xl:items-center max-lg:items-start md:gap-6 lg:flex-row xl:gap-[2.25rem]">
         <div class="h-[240px] w-full sm:h-full sm:w-[60%] lg:w-[40%]">
           <a href="single.html" class="group/image block h-full w-full overflow-hidden rounded-lg">
             <img
