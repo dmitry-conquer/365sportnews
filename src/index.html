@@ -5,67 +5,70 @@
     <div class="relative flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
       <main class="grow">
+        <!-- h1 СЕО заголовок (скрінрідери + гугл-роботи) -->
+        <h1 class="sr-only">365sportnews. Свіжі новини спорту онлайн завжди під рукою</h1>
+
         <!-- Топ новини -->
-        <div class="relative xl:container sm:flex">
+        <section class="relative xl:container sm:flex">
           <div class="absolute left-full top-0 z-20 h-full w-full bg-secondary"></div>
           <div class="absolute right-full top-0 z-20 h-full w-full bg-secondary"></div>
-          <p
+          <h2
             class="z-10 flex h-full w-full items-center justify-center whitespace-nowrap bg-primary-danger px-4 py-1 text-center text-sm font-bold sm:absolute sm:left-0 sm:top-0 sm:w-32 sm:py-3 lg:text-base">
             ТОП-новини
-          </p>
+          </h2>
           <div class="slider-marquee w-auto bg-secondary-dark">
             <div
               class="slider-marquee-wrapper flex h-full w-full items-center space-x-5 divide-x-2 divide-primary bg-secondary-dark px-6 py-2 ease-linear sm:py-3 [&>*:not(:first-child)]:pl-5">
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>Барселона лідер таблиці чемпіонату</h2>
+                  <h3>Барселона лідер таблиці чемпіонату</h3>
                 </a>
               </article>
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                  <h3>ПСЖ впевнено переміг Марсель на виїзді</h3>
                 </a>
               </article>
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                  <h3>ПСЖ впевнено переміг Марсель на виїзді</h3>
                 </a>
               </article>
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>Ліга Чемпіонів 2022/23</h2>
+                  <h3>Ліга Чемпіонів 2022/23</h3>
                 </a>
               </article>
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                  <h3>ПСЖ впевнено переміг Марсель на виїзді</h3>
                 </a>
               </article>
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>Ліга Чемпіонів 2022/23</h2>
+                  <h3>Ліга Чемпіонів 2022/23</h3>
                 </a>
               </article>
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>ПСЖ впевнено переміг Марсель на виїзді</h2>
+                  <h3>ПСЖ впевнено переміг Марсель на виїзді</h3>
                 </a>
               </article>
               <article class="slider-marquee-slide shrink-0">
                 <a href="single.html" class="text-center text-sm font-bold lg:text-base">
-                  <h2>Ліга Чемпіонів 2022/23</h2>
+                  <h3>Ліга Чемпіонів 2022/23</h3>
                 </a>
               </article>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- Анонси -->
         <section class="mt-8 md:mt-11">
           <div class="container">
             <div class="mb-5 flex flex-wrap items-center justify-between gap-5">
               <h2 class="bottom-line inline-block text-xl font-bold">Анонси</h2>
-              <a href="#" class="group flex items-center gap-2 pb-2 text-xl hover:text-primary">
+              <a href="#" class="group flex items-center gap-2 text-lg hover:text-primary max-sm:mt-2 sm:text-xl xl:pb-2">
                 Більше
                 <svg class="mt-1 h-3 w-3.5 rotate-90 text-white group-hover:text-primary">
                   <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
@@ -82,10 +85,10 @@
                   class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
                 <div class="relative z-20 flex h-full flex-col">
                   <a href="single.html" class="group flex h-full w-full">
-                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                    <h3 class="mb-2 mt-auto line-clamp-3 font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h3>
                   </a>
                   <div>
-                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
                     <p class="text-sm">20 березня 2023, 14:34</p>
                   </div>
                 </div>
@@ -98,10 +101,10 @@
                   class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
                 <div class="relative z-20 flex h-full flex-col">
                   <a href="single.html" class="group flex h-full w-full">
-                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                    <h3 class="mb-2 mt-auto line-clamp-3 font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h3>
                   </a>
                   <div>
-                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
                     <p class="text-sm">20 березня 2023, 14:34</p>
                   </div>
                 </div>
@@ -114,10 +117,10 @@
                   class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
                 <div class="relative z-20 flex h-full flex-col">
                   <a href="single.html" class="group flex h-full w-full">
-                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                    <h3 class="mb-2 mt-auto line-clamp-3 font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h3>
                   </a>
                   <div>
-                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
                     <p class="text-sm">20 березня 2023, 14:34</p>
                   </div>
                 </div>
@@ -130,10 +133,10 @@
                   class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
                 <div class="relative z-20 flex h-full flex-col">
                   <a href="single.html" class="group flex h-full w-full">
-                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                    <h3 class="mb-2 mt-auto line-clamp-3 font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h3>
                   </a>
                   <div>
-                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
                     <p class="text-sm">20 березня 2023, 14:34</p>
                   </div>
                 </div>
@@ -146,10 +149,10 @@
                   class="z-15 absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover/article:scale-105" />
                 <div class="relative z-20 flex h-full flex-col">
                   <a href="single.html" class="group flex h-full w-full">
-                    <h2 class="mb-2 mt-auto font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                    <h3 class="mb-2 mt-auto line-clamp-3 font-bold underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h3>
                   </a>
                   <div>
-                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
                     <p class="text-sm">20 березня 2023, 14:34</p>
                   </div>
                 </div>
@@ -160,67 +163,266 @@
 
         <!-- Огляд подій -->
         <section class="mt-12 md:mt-20">
-          <div class="container">
-            <div class="mb-5 flex flex-wrap items-center justify-between gap-5">
+          <div class="sm:container max-sm:pl-4">
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-5 max-sm:pr-4">
               <h2 class="bottom-line inline-block text-xl font-bold">Огляд подій</h2>
-              <a href="#" class="group flex items-center gap-2 xl:pb-2 text-xl hover:text-primary">
+              <a href="#" class="group flex items-center gap-2 text-lg hover:text-primary max-sm:mt-2 sm:text-xl xl:pb-2">
                 Більше
                 <svg class="mt-1 h-3 w-3.5 rotate-90 text-white group-hover:text-primary">
                   <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
                 </svg>
               </a>
             </div>
-            <div class="grid sm:grid-cols-3 gap-4 gap-y-10">
-              <article>
-                  <div class="overflow-hidden rounded-lg">
-                    <a href="single.html" class="group mb-3 block h-full w-full overflow-hidden">
-                      <img src="./img/image4.webp" alt="Еріксен продовжує відновлюватися після операції на щиколотці" class="overflow-hidden rounded-lg w-full object-cover transition-transform duration-500 group-hover:scale-105 h-[240px] sm:h-full">
+            <div class="relative flex w-full items-center gap-5">
+              <button class="prev-slide hidden lg:block" type="button" aria-label="Попередній слайд">
+                <svg class="h-6 w-6 -rotate-90 text-white">
+                  <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
+                </svg>
+              </button>
+              <div data-slides-per-view="3" class="slider-default w-full overflow-hidden pb-10 lg:pb-0">
+                <div class="slider-default-wrapper flex">
+                  <article class="slider-default-slide shrink-0">
+                    <div class="mb-3 overflow-hidden rounded-lg">
+                      <a href="single.html" class="group block h-full w-full overflow-hidden">
+                        <img
+                          src="./img/image4.webp"
+                          alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                          class="h-[200px] w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105 sm:h-full" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="single.html" class="group flex h-full w-full">
+                        <h3 class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:underline lg:font-bold xl:text-xl">
+                          Еріксен продовжує відновлюватися після операції на щиколотці
+                        </h3>
+                      </a>
+                      <div>
+                        <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
+                        <p class="text-sm">20 березня 2023, 14:34</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="slider-default-slide shrink-0">
+                    <div class="mb-3 overflow-hidden rounded-lg">
+                      <a href="single.html" class="group block h-full w-full overflow-hidden">
+                        <img
+                          src="./img/image4.webp"
+                          alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                          class="h-[200px] w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105 sm:h-full" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="single.html" class="group flex h-full w-full">
+                        <h3 class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:underline lg:font-bold xl:text-xl">
+                          Еріксен продовжує відновлюватися після операції на щиколотці
+                        </h3>
+                      </a>
+                      <div>
+                        <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
+                        <p class="text-sm">20 березня 2023, 14:34</p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="slider-default-slide shrink-0">
+                    <div class="mb-3 overflow-hidden rounded-lg">
+                      <a href="single.html" class="group block h-full w-full overflow-hidden">
+                        <img
+                          src="./img/image4.webp"
+                          alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                          class="h-[200px] w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105 sm:h-full" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="single.html" class="group flex h-full w-full">
+                        <h3 class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:underline lg:font-bold xl:text-xl">
+                          Еріксен продовжує відновлюватися після операції на щиколотці
+                        </h3>
+                      </a>
+                      <div>
+                        <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 lg:text-sm">футбол</a>
+                        <p class="text-sm">20 березня 2023, 14:34</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button class="next-slide hidden lg:block" type="button" aria-label="Наступний слайд">
+                <svg class="h-6 w-6 rotate-90 text-white">
+                  <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
+                </svg>
+              </button>
+              <div class="pagination absolute bottom-5 flex justify-center lg:hidden"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Новини -->
+        <section class="mt-12 md:mt-20">
+          <div class="container">
+            <div class="mb-5 flex flex-wrap items-center justify-between gap-5">
+              <h2 class="bottom-line inline-block text-xl font-bold">Новини</h2>
+              <a href="#" class="group flex items-center gap-2 text-lg hover:text-primary max-sm:mt-2 sm:text-xl xl:pb-2">
+                Більше
+                <svg class="mt-1 h-3 w-3.5 rotate-90 text-white group-hover:text-primary">
+                  <use href="./sprites/sprite.svg#icon-simple-arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="flex flex-col gap-x-16 gap-y-8 sm:gap-y-4 lg:flex-row">
+              <div class="flex flex-col gap-8 sm:gap-4 lg:w-1/2">
+                <article class="flex grow flex-col items-center gap-4 sm:h-[160px] sm:flex-row">
+                  <div class="h-full overflow-hidden rounded-lg sm:w-[40%] lg:shrink-0">
+                    <a href="single.html" class="group block h-full w-full overflow-hidden">
+                      <img
+                        src="./img/image4.webp"
+                        alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                        class="block h-full w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105" />
                     </a>
                   </div>
-                <div>
+                  <div class="sm:w-[60%] lg:shrink-0">
+                    <a href="single.html" class="group flex h-full w-full">
+                      <h3 class="mb-3 line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:underline lg:font-bold 2xl:text-lg">
+                        Еріксен продовжує відновлюватися після операції на щиколотці
+                      </h3>
+                    </a>
+                    <div>
+                      <a href="#" class="mb-3 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 sm:mb-8 lg:text-sm"
+                        >футбол</a
+                      >
+                      <p class="text-sm">20 березня 2023, 14:34</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex grow flex-col items-center gap-4 sm:h-[160px] sm:flex-row">
+                  <div class="h-full overflow-hidden rounded-lg sm:w-[40%] lg:shrink-0">
+                    <a href="single.html" class="group block h-full w-full overflow-hidden">
+                      <img
+                        src="./img/image4.webp"
+                        alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                        class="block h-full w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </a>
+                  </div>
+                  <div class="sm:w-[60%] lg:shrink-0">
+                    <a href="single.html" class="group flex h-full w-full">
+                      <h3 class="mb-3 line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:underline lg:font-bold 2xl:text-lg">
+                        Еріксен продовжує відновлюватися після операції на щиколотці
+                      </h3>
+                    </a>
+                    <div>
+                      <a href="#" class="mb-3 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 sm:mb-8 lg:text-sm"
+                        >футбол</a
+                      >
+                      <p class="text-sm">20 березня 2023, 14:34</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex grow flex-col items-center gap-4 sm:h-[160px] sm:flex-row">
+                  <div class="h-full overflow-hidden rounded-lg sm:w-[40%] lg:shrink-0">
+                    <a href="single.html" class="group block h-full w-full overflow-hidden">
+                      <img
+                        src="./img/image4.webp"
+                        alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                        class="block h-full w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </a>
+                  </div>
+                  <div class="sm:w-[60%] lg:shrink-0">
+                    <a href="single.html" class="group flex h-full w-full">
+                      <h3 class="mb-3 line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:underline lg:font-bold 2xl:text-lg">
+                        Еріксен продовжує відновлюватися після операції на щиколотці
+                      </h3>
+                    </a>
+                    <div>
+                      <a href="#" class="mb-3 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 sm:mb-8 lg:text-sm"
+                        >футбол</a
+                      >
+                      <p class="text-sm">20 березня 2023, 14:34</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <article class="flex grow flex-col items-center gap-4 sm:h-[160px] sm:flex-row lg:h-full lg:w-1/2 lg:flex-col">
+                <div class="h-full overflow-hidden rounded-lg sm:w-[40%] lg:w-full lg:shrink-0">
+                  <a href="single.html" class="group block h-full w-full overflow-hidden">
+                    <img
+                      src="./img/image4.webp"
+                      alt="Еріксен продовжує відновлюватися після операції на щиколотці"
+                      class="block h-full w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </a>
+                </div>
+                <div class="sm:w-[60%] lg:w-full lg:shrink-0">
                   <a href="single.html" class="group flex h-full w-full">
-                    <h2 class="mb-2 mt-auto font-normal lg:font-bold leading-tight underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
+                    <h3 class="mb-3 line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:underline lg:text-2xl lg:font-bold 2xl:text-3xl">
+                      Еріксен продовжує відновлюватися після операції на щиколотці
+                    </h3>
                   </a>
                   <div>
-                    <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
+                    <a href="#" class="mb-3 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs uppercase text-black hover:bg-gray-400/70 sm:mb-8 lg:text-sm"
+                      >футбол</a
+                    >
                     <p class="text-sm">20 березня 2023, 14:34</p>
                   </div>
                 </div>
               </article>
-              <article>
-                <div class="overflow-hidden rounded-lg">
-                  <a href="single.html" class="group mb-3 block h-full w-full overflow-hidden">
-                    <img src="./img/image4.webp" alt="Еріксен продовжує відновлюватися після операції на щиколотці" class="overflow-hidden rounded-lg  w-full object-cover transition-transform duration-500 group-hover:scale-105 h-[240px] sm:h-full">
-                  </a>
-                </div>
-              <div>
-                <a href="single.html" class="group flex h-full w-full">
-                  <h2 class="mb-2 mt-auto font-normal lg:font-bold leading-tight underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
-                </a>
-                <div>
-                  <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
-                  <p class="text-sm">20 березня 2023, 14:34</p>
-                </div>
-              </div>
-            </article>
-            <article>
-              <div class="overflow-hidden rounded-lg">
-                <a href="single.html" class="group mb-3 block h-full w-full overflow-hidden">
-                  <img src="./img/image4.webp" alt="Еріксен продовжує відновлюватися після операції на щиколотці" class="overflow-hidden rounded-lg  w-full object-cover transition-transform duration-500 group-hover:scale-105 h-[240px] sm:h-full">
-                </a>
-              </div>
-            <div>
-              <a href="single.html" class="group flex h-full w-full">
-                <h2 class="mb-2 mt-auto text-base xl:text-xl font-normal lg:font-bold leading-tight underline-offset-2 group-hover:underline">Еріксен продовжує відновлюватися після операції на щиколотці</h2>
-              </a>
-              <div>
-                <a href="#" class="mb-4 inline-block rounded-[0.125rem] bg-gray-300/70 px-2 py-1 text-xs lg:text-sm uppercase text-black hover:bg-gray-400/70">футбол</a>
-                <p class="text-sm">20 березня 2023, 14:34</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- СЕО текст -->
+        <section class="mt-12 bg-secondary-dark pt-10 pb-6 sm:py-12 md:mt-20">
+          <div class="container">
+            <div
+              class="prose prose-headings:text-white prose-a:text-white prose-p:text-white prose-ul:text-white prose-a:underline prose-img:w-full prose-img:h-[200px] prose-img:object-cover max-w-none">
+              <h2>Свіжі новини спорту онлайн завжди під рукою</h2>
+              <p>
+                Якщо ви шукаєте найактуальнішу інформацію зі світу спорту, то портал sport.ua створений саме для вас. Вам більше не потрібно відкривати десятки сайтів, щоб знайти
+                свіжі новини та відео з кращих ігор минулого туру – все це є на 365sportnews:
+              </p>
+              <ul>
+                <li>Анонси майбутніх матчів.</li>
+                <li>Хроніка ігор.</li>
+                <li>Огляд та інтерв'ю.</li>
+                <li>Аналітика та результати.</li>
+                <li>Прогноз.</li>
+                <li>І багато іншого.</li>
+              </ul>
+              <p>
+                На нашому сайті можна знайти не тільки інформацію про топові матчі, але і менш популярні чемпіонати та змагання. Особливо великий вибір подій і детальна інформація
+                про них присвячена українському футболу. Новини спорту України
+              </p>
+              <p>Якщо говорити про український футбол, то на сайті публікується найбільша інформація про всі дивізіони та чемпіонати країни:</p>
+              <ul>
+                <li>Прем'єр-Ліга.</li>
+                <li>Ігри збірної України з футболу.</li>
+                <li>Ігри жіночої збірної.</li>
+                <li>Перша і друга ліги.</li>
+                <li>Кубок України.</li>
+              </ul>
+              <p>
+                Ми б не стали кращим футбольним порталом, якби висвітлювали тільки професійний футбол України. На сайті ви можете знайти змагання з футзалу, а також аматорські
+                змагання з найпопулярнішого виду спорту - футболу. Більш того, пропонується найактуальніша і докладна інформація про українських футболістів і функціонерів, що
+                працюють в інших європейських лігах.
+              </p>
+              <div class="hidden-text-prose hidden">
+                <p>
+                  На нашому сайті можна знайти не тільки інформацію про топові матчі, але і менш популярні чемпіонати та змагання. Особливо великий вибір подій і детальна
+                  інформація про них присвячена українському футболу. Новини спорту України
+                </p>
+                <p>Якщо говорити про український футбол, то на сайті публікується найбільша інформація про всі дивізіони та чемпіонати країни:</p>
+                <ul>
+                  <li>Прем'єр-Ліга.</li>
+                  <li>Ігри збірної України з футболу.</li>
+                  <li>Ігри жіночої збірної.</li>
+                  <li>Перша і друга ліги.</li>
+                  <li>Кубок України.</li>
+                </ul>
+                <p>
+                  Ми б не стали кращим футбольним порталом, якби висвітлювали тільки професійний футбол України. На сайті ви можете знайти змагання з футзалу, а також аматорські
+                  змагання з найпопулярнішого виду спорту - футболу. Більш того, пропонується найактуальніша і докладна інформація про українських футболістів і функціонерів, що
+                  працюють в інших європейських лігах.
+                </p>
               </div>
             </div>
-          </article>
-   
-            </div>
+            <button class="font-base read-more-btn mt-4 text-white underline hover:text-primary" type="button">Читати далі...</button>
           </div>
         </section>
       </main>

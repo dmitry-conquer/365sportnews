@@ -9,6 +9,10 @@ import './modules/search-form.js';
 
 // eslint-disable-next-line import/extensions
 import "./modules/sliders.js";
+
+// eslint-disable-next-line import/extensions
+import "./modules/read-more.js";
+
 // // import "./modules/load-more.js";
 // import "./modules/scroll.js";
 // import "./modules/spoiler.js";

@@ -22,5 +22,7 @@ module.exports = {
   future: {
     hoverOnlyWhenSupported: true,
   },
-  // plugins: [require("@tailwindcss/typography")],
+  
+  // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+  plugins: [require("@tailwindcss/typography")],
 };
