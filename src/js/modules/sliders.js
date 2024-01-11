@@ -1,13 +1,16 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Swiper, { Autoplay, Navigation } from 'swiper';
 
-if (document.querySelector('.slider-marquee')) {
+const sliderMarquee = document.querySelector('.slider-marquee');
+if (sliderMarquee) {
+  const speed = parseInt(sliderMarquee.dataset.sliderSpeed, 10);
+  // eslint-disable-next-line no-unused-vars
   const marqueeSlider = new Swiper('.slider-marquee', {
     modules: [Autoplay],
     wrapperClass: 'slider-marquee-wrapper',
     slideClass: 'slider-marquee-slide',
     centeredSlides: true,
-    speed: 4000,
+    speed,
     autoplay: {
       delay: 5,
       disableOnInteraction: false,
@@ -17,27 +20,6 @@ if (document.querySelector('.slider-marquee')) {
     loop: true,
     watchSlidesProgress: true,
     grabCursor: true,
-
-    /*
-         breakpoints: {
-            320: {
-               slidesPerView: 1,
-               spaceBetween: 0,
-            },
-            576: {
-               slidesPerView: 1,
-               spaceBetween: 0,
-            },
-            768: {
-               slidesPerView: 2,
-               spaceBetween: 20,
-            },
-            992: {
-               slidesPerView: 3,
-               spaceBetween: 20,
-            },
-         },
-         */
   });
 }
 
@@ -46,6 +28,7 @@ defaultSliders.forEach(slider => {
   if (slider) {
     const slidesAmount = slider.dataset.slidesPerView;
 
+    // eslint-disable-next-line no-unused-vars
     const defaultSLider = new Swiper(slider, {
       modules: [Autoplay, Navigation],
       wrapperClass: 'slider-default-wrapper',
