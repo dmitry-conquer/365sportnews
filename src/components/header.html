@@ -1,3 +1,106 @@
-<header class="">
-  <div class=""></div>
+<header id="header" class="relative z-[999] bg-primary">
+  <div class="absolute left-0 top-0 w-full h-full bg-primary z-[200] block lg:hidden"></div>
+  <div class="container relative flex w-full items-center py-4">
+    <a href="/" class="z-[300] mr-11 w-[100px] shrink-0 md:w-[132px]">
+      <img src="./img/header-logo.svg" alt="365livenews" />
+    </a>
+    <div
+      id="header-menu"
+      class="z-20 transition-transform duration-300 max-lg:fixed max-lg:left-0 max-lg:top-0 max-lg:flex max-lg:w-full max-lg:-translate-y-full max-lg:flex-col max-lg:items-center max-lg:gap-10 max-lg:overflow-auto max-lg:bg-secondary-dark max-lg:pb-20 lg:mr-12">
+      <nav id="header-nav" class="relative w-full flex-col items-center max-lg:flex max-lg:h-screen max-lg:overflow-auto max-lg:pb-12">
+        <ul
+          class="flex w-full flex-col flex-wrap max-sm:mb-3 items-start gap-x-8 gap-y-8 text-left max-lg:container max-lg:pt-28 sm:text-center lg:max-w-[620px] lg:flex-row lg:items-center lg:gap-y-1">
+          <li class="max-lg:w-full">
+            <a href="archive.html" class="anim-underline anim-underline_white text-3xl font-bold text-white lg:text-base">Новини</a>
+          </li>
+          <li class="max-lg:w-full">
+            <a href="archive.html" class="anim-underline anim-underline_white text-3xl font-bold text-white lg:text-base">Огляд подій</a>
+          </li>
+          <li class="max-lg:w-full">
+            <a href="archive.html" class="anim-underline anim-underline_white text-3xl font-bold text-white lg:text-base">Анонси</a>
+          </li>
+          <li class="menu-item-has-children group relative cursor-pointer -mb-4 flex flex-wrap items-center justify-start gap-4 pb-4 max-lg:w-full sm:justify-center lg:gap-2">
+            <a href="archive.html" class="anim-underline anim-underline_white text-3xl font-bold text-white lg:text-base">Спорт</a>
+            <button type="button" class="peer -m-2 -mt-1 rotate-180 p-2 transition-transform duration-300 group-hover:rotate-0">
+              <img src="./img/simple-arrow.svg" alt="Arrow" />
+            </button>
+            <ul
+              class="sub-menu flex w-full grow flex-col gap-5 lg:gap-y-[0.62rem] bg-secondary-dark px-7 text-left transition-all duration-300 group-hover:visible group-hover:opacity-100 max-lg:max-h-0 max-lg:overflow-hidden sm:text-center lg:invisible lg:absolute lg:left-0 lg:top-[calc(100%-10px)] lg:min-w-[200px] lg:pb-6 lg:pt-4 lg:text-left lg:opacity-0">
+              <li>
+                <a href="archive.html" class="anim-underline anim-underline_red text-white  text-2xl lg:text-base">Футбол</a>
+              </li>
+              <li>
+                <a href="archive.html" class="anim-underline anim-underline_red text-white  text-2xl lg:text-base">Баскетбол</a>
+              </li>
+              <li>
+                <a href="archive.html" class="anim-underline anim-underline_red text-white  text-2xl lg:text-base">Волейбол</a>
+              </li>
+              <li>
+                <a href="archive.html" class="anim-underline anim-underline_red text-white  text-2xl lg:text-base">Гандбол</a>
+              </li>
+              <li>
+                <a href="archive.html" class="anim-underline anim-underline_red text-white  text-2xl lg:text-base">Хокей</a>
+              </li>
+              <li>
+                <a href="archive.html" class="anim-underline anim-underline_red text-white  text-2xl lg:text-base">Дартс</a>
+              </li>
+              <li>
+                <a href="archive.html" class="anim-underline anim-underline_red text-white  text-2xl lg:text-base">Теніс</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="ml-auto flex items-center gap-6 md:gap-10 z-[999]">
+      <div>
+        <button id="open-search" class="pt-1" type="button">
+          <svg class="h-6 w-6 text-white hover:text-primary-dark sm:h-7 sm:w-7">
+            <use href="./sprites/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+        <form id="search-form" data-da="#header,639.98,last" action="#" class="relative hidden h-12 items-center sm:h-10 z-[999]">
+          <button type="submit" class="grid h-full w-14 place-content-center bg-secondary-dark p-1 sm:w-10 sm:rounded-l-md lg:bg-secondary">
+            <svg class="h-6 w-6 text-white/70">
+              <use href="./sprites/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <button id="close-form" class="absolute right-2 top-1/2 block -translate-y-1/2 sm:hidden" type="button">
+            <svg class="h-6 w-6 text-primary">
+              <use href="./sprites/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <input type="text" placeholder="Пошук..." class="h-full w-full px-2 focus:outline-none sm:w-[150px] sm:rounded-r-md md:max-w-[180px] lg:shrink-0" />
+        </form>
+      </div>
+      <a
+        data-da="#header-nav,639.98,last"
+        href="https://365livesport.live/"
+        target="_blank"
+        class="pulse-dot rounded-sm border border-primary-danger bg-primary px-6 py-1.5 font-bold uppercase transition-colors hover:bg-gray-500/40 max-sm:mt-6 max-sm:text-white sm:rounded-md sm:border-primary-dark sm:bg-gray-500/20 sm:px-4 sm:py-0.5"
+        >LIVE</a
+      >
+      <div
+        data-da="#header-nav,374.98,1"
+        class="flex items-center space-x-2 divide-x-2 font-bold leading-none text-white max-sm:text-sm [&>*:hover]:text-primary-dark [&>*:not(:first-child)]:pl-2">
+        <a href="#">RU</a>
+        <a href="#">EN</a>
+        <a href="#" class="underline">UA</a>
+      </div>
+    </div>
+    <button id="burger-button" class="group relative z-[999] ml-4 block sm:ml-8 lg:hidden">
+      <div class="relative flex h-[50px] w-[40px] transform items-center justify-center overflow-hidden">
+        <div id="burger-inner" class="flex h-[20px] w-[25px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300">
+          <div class="h-[2px] w-7 origin-left transform rounded-2xl bg-white transition-all duration-300"></div>
+          <div class="h-[2px] w-7 transform rounded-2xl bg-white transition-all delay-75 duration-300"></div>
+          <div class="h-[2px] w-7 origin-left transform rounded-2xl bg-white transition-all delay-150 duration-300"></div>
+
+          <div id="burger-cross" class="absolute top-2.5 flex w-0 -translate-x-10 transform items-center justify-between transition-all duration-500">
+            <div class="absolute h-[2px] w-7 rotate-0 transform rounded-2xl bg-white transition-all delay-300 duration-500"></div>
+            <div class="absolute h-[2px] w-7 -rotate-0 transform rounded-2xl bg-white transition-all delay-300 duration-500"></div>
+          </div>
+        </div>
+      </div>
+    </button>
+  </div>
 </header>

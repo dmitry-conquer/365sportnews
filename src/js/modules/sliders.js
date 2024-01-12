@@ -1,125 +1,73 @@
-import Swiper, { Navigation, Pagination, Autoplay, Parallax, Scrollbar } from 'swiper';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Swiper, { Autoplay, Navigation } from 'swiper';
 
-// Slider init function
-export function initSliders() {
-   //  Sliders list
-   if (document.querySelector('.slider')) {
-      let defaultSlider;
-      defaultSlider = new Swiper('.slider', {
-         // Сonnect modules (P.S dont forget !import)
-         modules: [Navigation, Pagination, Autoplay, Parallax],
-
-         // Custom classes
-         wrapperClass: 'slider__wrapper',
-         slideClass: 'slider__slide',
-
-         // Common settings
-         slidesPerView: 1,
-         spaceBetween: 30,
-         speed: 800,
-         observer: true,
-         observeParents: true,
-         loop: true,
-         loopedSlides: 2,
-         // centeredSlides: true,
-         // parallax: true,
-         // watchOverflow: false,
-         //autoHeight: true,
-         // watchSlidesProgress: true,
-
-         // Effects
-         //effect: 'fade',
-         //autoplay: {
-         //  delay: 1000,
-         //  disableOnInteraction: false,
-         //  pauseOnMouseEnter: true,
-         //},
-
-         // Pagination
-         // pagination: {
-         //    el: '.slider-default__pagination',
-         //    clickable: true,
-         // },
-
-         // Scrollbar
-         // //scrollbar: {
-         // //  el: '.swiper-scrollbar',
-         // //  draggable: true,
-         // //},
-
-         // Navigation
-         // navigation: {
-         //    prevEl: '.slider-default__button_prev',
-         //    nextEl: '.slider-default__button_next',
-         // },
-
-
-
-         // Breakpoints
-         /*
-         breakpoints: {
-            320: {
-               slidesPerView: 1,
-               spaceBetween: 0,
-            },
-            576: {
-               slidesPerView: 1,
-               spaceBetween: 0,
-            },
-            768: {
-               slidesPerView: 2,
-               spaceBetween: 20,
-            },
-            992: {
-               slidesPerView: 3,
-               spaceBetween: 20,
-            },
-         },
-         */
-
-
-         // Events
-            /*
-         on: {
-            // - - - - - - - [custom fraction] - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-            init: function (swiper) {
-              const allSliders = document.querySelector('.slider__all');
-              allSliders.innerHTML = swiper.slides.length;
-              console.log(allSliders.innerHTML);
-            },
-            slideChange: function (swiper) {
-              const currentSlide = document.querySelector('.slider__current');
-              currentSlide.innerHTML = swiper.realIndex + 1;
-              console.log(currentSlide.innerHTML);
-            },
-
-
-            // - - - - - - - [tabs] - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-            init: function(swiper) {
-               const captions = document.querySelectorAll('.captions-courses__item');
-               captions.forEach((item, index) => {
-                  item.addEventListener('click', function(e) {
-                     swiper.slideTo(index, 800)
-                  });
-               })
-            },
-            slideChange: function(swiper) {
-               const captions = document.querySelectorAll('.captions-courses__item');
-               captions.forEach((item) => {
-                  item.classList.remove('_active');
-               })
-               captions[swiper.realIndex].classList.add('_active');
-            },
-         },
-            */
-      });
-
-      // stop slider on mouseenter
-      // defaultSlider.el.addEventListener('mouseenter', () => {
-      //    defaultSlider.autoplay.stop();
-      // });
-      // defaultSlider.el.addEventListener('mouseleave', () => {
-      //    defaultSlider.autoplay.start();
-      // });
-   }
+const sliderMarquee = document.querySelector('.slider-marquee');
+if (sliderMarquee) {
+  const speed = parseInt(sliderMarquee.dataset.sliderSpeed, 10);
+  // eslint-disable-next-line no-unused-vars
+  const marqueeSlider = new Swiper('.slider-marquee', {
+    modules: [Autoplay],
+    wrapperClass: 'slider-marquee-wrapper',
+    slideClass: 'slider-marquee-slide',
+    centeredSlides: true,
+    speed,
+    autoplay: {
+      delay: 5,
+    },
+    slidesPerView: 'auto',
+    loop: true,
+    watchSlidesProgress: true,
+    grabCursor: true,
+  });
 }
+
+const defaultSliders = document.querySelectorAll('.slider-default');
+defaultSliders.forEach(slider => {
+  if (slider) {
+    const slidesAmount = slider.dataset.slidesPerView;
+
+    // eslint-disable-next-line no-unused-vars
+    const defaultSLider = new Swiper(slider, {
+      modules: [Autoplay, Navigation],
+      wrapperClass: 'slider-default-wrapper',
+      slideClass: 'slider-default-slide',
+      spaceBetween: 20,
+      speed: 900,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      slidesPerView: slidesAmount,
+      loop: true,
+      watchSlidesProgress: true,
+      grabCursor: true,
+      navigation: {
+        prevEl: slider.parentNode.querySelector('.prev-slide'),
+        nextEl: slider.parentNode.querySelector('.next-slide'),
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+        },
+        576: {
+          slidesPerView: 1.4,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.2,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 2.3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: slidesAmount,
+          spaceBetween: 20,
+        },
+      },
+    });
+  }
+});

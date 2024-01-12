@@ -1,0 +1,21 @@
+#header-menu {
+  &.active-menu {
+    @apply translate-y-0;
+  }
+}
+
+.menu-item-has-children {
+  &.is-active {
+   & button {
+      @apply rotate-0;
+    }
+   & .sub-menu {
+      @apply visible opacity-100;
+    }
+  }
+  & > a {
+    @apply pointer-events-none;
+  }
+}
+
+
