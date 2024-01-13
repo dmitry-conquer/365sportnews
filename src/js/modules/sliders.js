@@ -39,8 +39,6 @@ defaultSliders.forEach(slider => {
         pauseOnMouseEnter: true,
       },
       slidesPerView: slidesAmount,
-      loop: true,
-      watchSlidesProgress: true,
       grabCursor: true,
       navigation: {
         prevEl: slider.parentNode.querySelector('.prev-slide'),
