@@ -11,10 +11,12 @@ function openSearchForm() {
   }, 50);
   searchForm.style.display = 'flex';
   this.style.display = 'none';
+  closeSearchButton.style.display = 'block';
 }
 function closeSearchForm() {
   searchForm.style.display = 'none';
   openSearchButton.style.display = 'block';
+  this.style.display = 'none';
 }
 if (openSearchButton && searchForm && closeSearchButton) {
   openSearchButton.addEventListener('click', openSearchForm);

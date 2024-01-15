@@ -14,20 +14,10 @@ import "./modules/sliders.js";
 import "./modules/read-more.js";
 
 // eslint-disable-next-line import/extensions
-import "./modules/load-more.js";
-
-// eslint-disable-next-line import/extensions
 import "./modules/scroll.js";
 
 // eslint-disable-next-line import/extensions
 import "./modules/copy-text.js";
-
-// // import "./modules/load-more.js";
-// import "./modules/scroll.js";
-// import "./modules/spoiler.js";
-// import "./modules/custom-blanket-form.js";
-// import "./modules/dropdown.js";
-// import MicroModal from "micromodal";
 
 function app() {
   useDynamicAdapt('max');
