@@ -6,9 +6,8 @@
       @@include('components/header.html', { })
       <main class="grow">
         <div class="page-inner py-10 sm:py-16">
-
           <!-- Хлібні крихти -->
-          <div class="breadcrumbs container mb-10 flex items-center gap-2 [&>*:hover]:text-primary *:truncate *:text-sm *:font-bold *:uppercase *:transition-colors ">
+          <div class="breadcrumbs container mb-10 flex items-center gap-2 *:truncate *:text-sm *:font-bold *:uppercase *:transition-colors [&>*:hover]:text-primary">
             <a href="/" class="">Головна</a>
             <span>/</span>
             <a href="archie.html" class="">Новини</a>
@@ -24,16 +23,17 @@
                 <p class="text-sm">20 березня 2023, 14:34</p>
               </div>
               <h1 class="mb-8 text-center text-2xl font-bold uppercase md:text-4xl lg:mb-10 lg:text-5xl">Киллиан Мбаппе- лучший игрок матча против Марселя</h1>
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="./img/image4.webp"
                 alt="Киллиан Мбаппе- лучший игрок матча против Марселя"
                 class="h-[16rem] w-full rounded-lg object-cover sm:h-[23rem] lg:h-[30rem] xl:h-[36rem]" />
               <div
-                class="prose prose-ol:text-white marker:text-white prose-strong:text-white prose-table:text-white prose-headings:text-white prose-figcaption:text-white prose-figcaption:text-center prose-a:text-white prose-p:text-white prose-ul:text-white prose-a:underline prose-img:w-full prose-img:h-full sm:prose-img:h-full prose-img:rounded-xl prose-img:object-cover mx-auto mt-8 max-w-[850px] sm:mt-12 lg:mt-16">
+                class="prose mx-auto mt-8 max-w-[850px] marker:text-white prose-headings:text-white prose-p:text-white prose-a:text-white prose-a:underline prose-figcaption:text-center prose-figcaption:text-white prose-strong:text-white prose-ol:text-white prose-ul:text-white prose-table:text-white prose-img:h-full prose-img:w-full prose-img:rounded-xl prose-img:object-cover sm:mt-12 sm:prose-img:h-full lg:mt-16">
                 <p>
                   <strong>
-                    This series would be Easy Money for Bucks, as the only relevant player on the Magic would be, Nick Vucevic, but even him cant carry the magic, as Terrence Ross is
-                    still developing.
+                    This series would be Easy Money for Bucks, as the only relevant player on the Magic would be, Nick Vucevic, but even him cant carry the magic, as Terrence Ross
+                    is still developing.
                   </strong>
                 </p>
                 <ol>
@@ -117,6 +117,42 @@
                 </p>
               </div>
             </div>
+
+            <!-- comments -->
+            <div class="container mt-6 border-t border-gray-400 pt-6 sm:mt-12 sm:pt-12">
+              <ul class="space-y-6 sm:space-y-10">
+                <li class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                  <img src="./img/comment.webp" alt="user avatar" class="size-12 overflow-hidden rounded-full shrink-0 " />
+                  <div>
+                    <div class="flex items-end gap-x-2">
+                      <p class="font-bold text-white">@sja4234</p>
+                      <p class="text-sm text-white/70">22.01.2024</p>
+                    </div>
+                    <p>Digging the cozy feel alongside the outterspace vibe. Could you do a space faerie one? Could be unique and fun 🎉</p>
+                  </div>
+                </li>
+                <li class="flex flex-col sm:flex-row items-start sm:items-center gap-x-3 gap-y-2">
+                  <img src="./img/comment2.webp" alt="user avatar" class="size-12 overflow-hidden rounded-full shrink-0" />
+                  <div>
+                    <div class="flex items-end gap-x-2">
+                      <p class="font-bold text-white">@greatboniwanker</p>
+                      <p class="text-sm text-white/70">12.03.2023</p>
+                    </div>
+                    <p>Very nice. This is traveling in style!</p>
+                  </div>
+                </li>
+                <li class="flex flex-col sm:flex-row items-start sm:items-center gap-x-3 gap-y-2">
+                  <img src="./img/comment3.webp" alt="user avatar" class="size-12 overflow-hidden rounded-full shrink-0" />
+                  <div>
+                    <div class="flex items-end gap-x-2">
+                      <p class="font-bold text-white">@kimberlymisfit3544</p>
+                      <p class="text-sm text-white/70">12.03.2023</p>
+                    </div>
+                    <p>I love this,just subbed❤❤❤</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <!-- Огляд подій -->
@@ -142,7 +178,8 @@
                     <article class="slider-default-slide shrink-0">
                       <div class="mb-3 overflow-hidden rounded-lg">
                         <a href="single.html" class="group block h-full w-full overflow-hidden">
-                          <img loading="lazy"
+                          <img
+                            loading="lazy"
                             src="./img/image4.webp"
                             alt="Еріксен продовжує відновлюватися після операції на щиколотці"
                             class="h-[200px] w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105 sm:h-full" />
@@ -150,7 +187,8 @@
                       </div>
                       <div>
                         <a href="single.html" class="group flex h-full w-full">
-                          <h3 class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:text-primary transition-colors lg:font-bold xl:text-xl">
+                          <h3
+                            class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 transition-colors group-hover:text-primary lg:font-bold xl:text-xl">
                             Еріксен продовжує відновлюватися після операції на щиколотці
                           </h3>
                         </a>
@@ -163,7 +201,8 @@
                     <article class="slider-default-slide shrink-0">
                       <div class="mb-3 overflow-hidden rounded-lg">
                         <a href="single.html" class="group block h-full w-full overflow-hidden">
-                          <img loading="lazy"
+                          <img
+                            loading="lazy"
                             src="./img/image4.webp"
                             alt="Еріксен продовжує відновлюватися після операції на щиколотці"
                             class="h-[200px] w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105 sm:h-full" />
@@ -171,7 +210,8 @@
                       </div>
                       <div>
                         <a href="single.html" class="group flex h-full w-full">
-                          <h3 class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:text-primary transition-colors lg:font-bold xl:text-xl">
+                          <h3
+                            class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 transition-colors group-hover:text-primary lg:font-bold xl:text-xl">
                             Еріксен продовжує відновлюватися після операції на щиколотці
                           </h3>
                         </a>
@@ -184,7 +224,8 @@
                     <article class="slider-default-slide shrink-0">
                       <div class="mb-3 overflow-hidden rounded-lg">
                         <a href="single.html" class="group block h-full w-full overflow-hidden">
-                          <img loading="lazy"
+                          <img
+                            loading="lazy"
                             src="./img/image4.webp"
                             alt="Еріксен продовжує відновлюватися після операції на щиколотці"
                             class="h-[200px] w-full overflow-hidden rounded-lg object-cover transition-transform duration-500 group-hover:scale-105 sm:h-full" />
@@ -192,7 +233,8 @@
                       </div>
                       <div>
                         <a href="single.html" class="group flex h-full w-full">
-                          <h3 class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 group-hover:text-primary transition-colors lg:font-bold xl:text-xl">
+                          <h3
+                            class="mb-2 mt-auto line-clamp-3 text-base font-normal leading-tight underline-offset-2 transition-colors group-hover:text-primary lg:font-bold xl:text-xl">
                             Еріксен продовжує відновлюватися після операції на щиколотці
                           </h3>
                         </a>
