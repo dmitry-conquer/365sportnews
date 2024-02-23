@@ -1,0 +1,32 @@
+@layer components {
+  .match {
+    @apply w-full min-w-[325px]  border-separate overflow-hidden rounded-xl border border-neutral-400;
+    img {
+      @apply m-0 size-full overflow-hidden rounded-full;
+    }
+    tr {
+      &:first-child {
+        td {
+          @apply text-center text-2xl font-bold;
+        }
+      }
+      &:not(:first-child) {
+        @apply grid grid-cols-[200px_1fr_58px_auto_58px_1fr] items-center  justify-center border-neutral-400 odd:bg-neutral-800 even:bg-neutral-700 max-sm:grid-cols-[1fr_50px_auto_50px_1fr];
+        td {
+          &:first-child {
+            @apply max-sm:col-span-6 max-sm:w-full max-sm:pb-0 max-sm:text-center  max-sm:font-bold;
+          }
+        }
+      }
+    }
+    td {
+      @apply px-2 py-3 text-sm sm:text-base leading-none;
+      &:nth-child(2) {
+        @apply justify-self-end text-right;
+      }
+      &:nth-child(4) {
+        @apply sm:mx-2 rounded-lg bg-neutral-500 px-2 py-1 text-center text-sm;
+      }
+    }
+  }
+}
